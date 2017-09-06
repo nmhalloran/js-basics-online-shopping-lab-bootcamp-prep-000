@@ -50,7 +50,7 @@ function viewCart() {
 addToCart('peaches')
 addToCart('plums')
 addToCart('oranges')
-removeFromCart('poop')
+removeFromCart('oranges')
 console.log(cart.length)
 viewCart()
 placeOrder()
@@ -71,8 +71,13 @@ var foundItem = false
 var i = 0
 // for (var i = 0; i < cart.length; i++) {
    for (let value in cart) {
+     console.log(item)
+     console.lot(value)
+     console.log(cart)
       if ( value === item ) {
         cart.splice(i, 1)
+        console.log(item)
+        console.lot(value)
         console.log(cart)
         foundItem = true
         return cart
