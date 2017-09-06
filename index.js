@@ -82,10 +82,6 @@ var i = 0
       else if (i === cart.length - 1 && foundItem === false) {
         console.log("That item is not in your cart.")
       }
-      else {
-        i++
-      }
-
   }
 }
 
