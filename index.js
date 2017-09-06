@@ -77,7 +77,7 @@ var i = 0
       if ( value === item ) {
         cart.splice(i, 1)
         console.log(item)
-        console.lot(value)
+        console.log(value)
         console.log(cart)
         foundItem = true
         return cart
