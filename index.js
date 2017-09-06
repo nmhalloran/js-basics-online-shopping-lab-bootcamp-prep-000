@@ -50,7 +50,7 @@ function viewCart() {
 addToCart('peaches')
 addToCart('plums')
 addToCart('oranges')
-removeFromCart('plums')
+removeFromCart('avocado')
 console.log(cart.length)
 viewCart()
 placeOrder()
