@@ -72,7 +72,7 @@ var i = 0
 // for (var i = 0; i < cart.length; i++) {
    for (let value in cart) {
      console.log(item)
-     console.lot(value)
+     console.log(value)
      console.log(cart)
       if ( value === item ) {
         cart.splice(i, 1)
