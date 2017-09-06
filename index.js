@@ -68,20 +68,18 @@ function total() {
 
 function removeFromCart(item) {
 var foundItem = false
-var i = 0
-// for (var i = 0; i < cart.length; i++) {
-   for (let value in cart) {
-     console.log(item)
-     console.log(value)
-     console.log(cart)
-      if ( value === item ) {
+  for (var i = 0; i < cart.length; i++) {
+   for (var thing in cart[i]) {
+      if (thing === item) {
         cart.splice(i, 1)
         foundItem = true
         return cart
       }
       else if (i === cart.length - 1 && foundItem === false) {
-        console.log("That item is not in your cart.")
+        return console.log("That item is not in your cart.")
       }
+      else {}
+    }
   }
 }
 
