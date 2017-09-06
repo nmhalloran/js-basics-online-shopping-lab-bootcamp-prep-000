@@ -73,7 +73,7 @@ var i = 0
    for (let value in cart) {
      console.log(item)
      console.log(value)
-     console.log(cart[value])
+     console.log(cart.value[i])
       if ( value === item ) {
         cart.splice(i, 1)
         foundItem = true
