@@ -76,12 +76,9 @@ var foundItem = false
         foundItem = true
         return cart
       }
-      else if (i === cart.length - 1 && foundItem === false) {
-        console.log("That item is not in your cart.")
-      }
-      else {}
     }
   }
+  console.log("That item is not in your cart.")
 }
 
 function placeOrder(cardNumber) {
