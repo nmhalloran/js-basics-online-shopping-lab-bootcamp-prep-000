@@ -70,12 +70,10 @@ function total() {
 function removeFromCart(item) {
 var foundItem = false
   for (var i = 0; i < cart.length; i++) {
-   for (var thing in cart[i]) {
-      if (thing === item) {
-        cart.splice(i, 1)
-        foundItem = true
-        return cart
-      }
+    if (cart[i].hasOwnProperty(item)) {
+      cart.splice(i, 1)
+      foundItem = true
+      return cart
     }
   }
   console.log("That item is not in your cart.")
